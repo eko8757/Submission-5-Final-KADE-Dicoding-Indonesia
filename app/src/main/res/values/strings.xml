@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Football Club Final</string>
+    <string name="detailteam">Detail Team</string>
+    <string name="detailplayer">Detail Player</string>
+    <string name="findTeam">Find Team</string>
+
+    <array name="league">
+        <item>English Premier League</item>
+        <item>English League Championship</item>
+        <item>German Bundesliga</item>
+        <item>Italian Serie A</item>
+        <item>French Ligue 1</item>
+        <item>Spanish La Liga</item>
+    </array>
+
+    <string name="dateitem">Minggu, 27 Juli 2018</string>
+    <string name="clubhome">Barcelona</string>
+    <string name="homescore">2</string>
+    <string name="vs">VS</string>
+    <string name="scoreaway">1</string>
+    <string name="clubaway">Real Madrid</string>
+    <string name="nameclub">Barcelona FC</string>
+    <string name="goals">Goal Kicker</string>
+    <string name="red">Red Card</string>
+    <string name="yellow">Yellow Card</string>
+    <string name="berat">Berat (KG)</string>
+    <string name="tinggi">Tinggi (M)</string>
+    <string name="overview">Overview and Player</string>
+    <string name="toFavorite">Added to favorite</string>
+    <string name="deleteFavorite">Delete from favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
