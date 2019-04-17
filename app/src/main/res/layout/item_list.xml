@@ -13,6 +13,9 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
+
+
+
     <TextView
         android:id="@+id/date"
         android:layout_width="match_parent"
