@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         tools:text="@string/dateitem"
         android:textSize="12sp"
-        android:fontFamily="@font/Montserrat-Regular"
+        android:fontFamily="@font/montserrat_semibold"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:padding="8dp"/>
