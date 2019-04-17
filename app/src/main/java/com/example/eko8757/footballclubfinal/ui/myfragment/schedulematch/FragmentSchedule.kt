@@ -1,5 +1,8 @@
 package com.example.eko8757.footballclubfinal.ui.myfragment.schedulematch
 
+import android.annotation.SuppressLint
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
@@ -7,6 +10,8 @@ import android.support.v4.view.ViewPager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TabHost
+import android.widget.TextView
 
 import com.example.eko8757.footballclubfinal.R
 import com.example.eko8757.footballclubfinal.adapter.AdapterTabPager
@@ -16,6 +21,7 @@ class FragmentSchedule : Fragment() {
     private lateinit var viewPager: ViewPager
     private lateinit var tabLayout: TabLayout
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_schedule, container, false)
@@ -32,9 +38,9 @@ class FragmentSchedule : Fragment() {
             AdapterTabPager(it)
         }
         val next = FragmentNext.nextIntance()
-        adapter?.addFragment(next, "NEXT EVENT")
+        adapter?.addFragment(next, "Next Event")
         val prev = FragmentPrev.prevInstance()
-        adapter?.addFragment(prev, "PREV EVENT")
+        adapter?.addFragment(prev, "Prev Event")
         pager?.adapter = adapter
     }
 

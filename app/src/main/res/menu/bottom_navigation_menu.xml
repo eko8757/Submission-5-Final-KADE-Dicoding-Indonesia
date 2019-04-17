@@ -3,13 +3,16 @@
     <item
         android:id="@+id/schedule_menu"
         android:title="Match"
+        android:iconTint="@color/white"
         android:icon="@drawable/nextblack"/>
     <item
         android:id="@+id/team_menu"
         android:title="Team"
+        android:iconTint="@color/white"
         android:icon="@drawable/soccerballvariant"/>
     <item
         android:id="@+id/favorite_menu"
         android:title="Favorite"
-        android:icon="@drawable/ic_stars_black_24dp"/>
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_favorite_black_24dp"/>
 </menu>

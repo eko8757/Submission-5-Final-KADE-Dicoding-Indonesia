@@ -9,7 +9,8 @@
    <Spinner
        android:id="@+id/spinner_next"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+       android:layout_height="wrap_content"
+       android:popupBackground="@color/colorUnchecked">
    </Spinner>
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -19,7 +20,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_next"

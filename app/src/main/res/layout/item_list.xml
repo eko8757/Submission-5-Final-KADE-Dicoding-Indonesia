@@ -5,13 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
     android:padding="16dp"
-    app:cardBackgroundColor="@color/card"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="8dp">
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="8dp">
 
     <TextView
         android:id="@+id/date"
@@ -19,7 +17,7 @@
         android:layout_height="wrap_content"
         tools:text="@string/dateitem"
         android:textSize="12sp"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:padding="8dp"/>
@@ -34,12 +32,13 @@
 
         <TextView
             android:id="@+id/club_home"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:gravity="center"
             android:padding="10dp"
             android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
             android:textColor="@color/white"
             tools:text="@string/clubhome"
             android:singleLine="true"/>
@@ -50,7 +49,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
             android:textColor="@color/white"
             tools:text="@string/homescore"/>
 
@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             tools:text="@string/vs"
+            android:fontFamily="@font/montserrat_regular"
             android:textSize="16sp"
             android:textColor="@color/white"/>
 
@@ -69,16 +70,19 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             tools:text="@string/scoreaway"
-            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
             android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/club_away"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:gravity="center"
             android:padding="10dp"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat_regular"
             tools:text="@string/clubaway"
             android:textSize="14sp"
             android:textColor="@color/white"/>

@@ -4,14 +4,12 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
     android:orientation="vertical"
-    app:cardBackgroundColor="@color/card"
+    app:cardBackgroundColor="@color/colorPrimary"
     android:padding="10dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="8dp">
+    app:cardCornerRadius="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,10 +27,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:singleLine="true"
             android:textColor="@color/white"
-            android:textStyle="italic"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_gravity="center_vertical"
             tools:text="@string/nameclub"/>
     </LinearLayout>

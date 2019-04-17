@@ -1,5 +1,6 @@
 package com.example.eko8757.footballclubfinal.ui.myactivity.detail_event
 
+import android.content.Intent
 import android.database.sqlite.SQLiteConstraintException
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +15,7 @@ import com.example.eko8757.footballclubfinal.db.database
 import com.example.eko8757.footballclubfinal.model.DetailEvent
 import com.example.eko8757.footballclubfinal.model.Team
 import com.example.eko8757.footballclubfinal.presenter.DetailPresenterEvent
+import com.example.eko8757.footballclubfinal.ui.myactivity.MainActivity
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail_event.*
@@ -32,6 +34,30 @@ class DetailActivityEvent : AppCompatActivity(), DetailViewEvent {
     private lateinit var events: DetailEvent
     private var menuItem: Menu? = null
     private var isFavorite: Boolean = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_detail_event)
+        supportActionBar?.title = "Detail Event"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        back_arrow_detail_event.setOnClickListener {
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+            finish()
+        }
+
+        val intent = intent
+        idEvent = intent.getStringExtra("idEvent")
+
+        val request = ApiRepository()
+        val gson = Gson()
+        presenter = DetailPresenterEvent(this, request, gson)
+
+        Log.d("idEvent", idEvent)
+        presenter.getDetailEvent(idEvent)
+    }
 
     override fun showTeam(data: Team) {
         when (data.teamId) {
@@ -138,9 +164,9 @@ class DetailActivityEvent : AppCompatActivity(), DetailViewEvent {
 
     private fun setFavorite() {
         if (isFavorite)
-            menuItem?.getItem(0)?.icon = ContextCompat.getDrawable(this, R.drawable.star)
+            menuItem?.getItem(0)?.icon = ContextCompat.getDrawable(this, R.drawable.ic_favorite_black_24dp)
         else
-            menuItem?.getItem(0)?.icon = ContextCompat.getDrawable(this, R.drawable.favorites)
+            menuItem?.getItem(0)?.icon = ContextCompat.getDrawable(this, R.drawable.ic_favorite_border_black_24dp)
     }
 
     private fun favoriteState() {
@@ -152,21 +178,11 @@ class DetailActivityEvent : AppCompatActivity(), DetailViewEvent {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_event)
-
-        supportActionBar?.title = "Detail Event"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        val intent = intent
-        idEvent = intent.getStringExtra("idEvent")
-
-        val request = ApiRepository()
-        val gson = Gson()
-        presenter = DetailPresenterEvent(this, request, gson)
-
-        Log.d("idEvent", idEvent)
-        presenter.getDetailEvent(idEvent)
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        finish()
     }
 }

@@ -26,8 +26,7 @@ class FragmentFavorite : Fragment() {
 
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_favorite, container, false)
         viewPager = view.findViewById(R.id.viewPager_favorite)
         tabLayout = view.findViewById(R.id.tab_favorite)

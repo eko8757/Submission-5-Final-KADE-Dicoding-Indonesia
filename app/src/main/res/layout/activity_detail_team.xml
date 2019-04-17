@@ -4,14 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorUnchecked"
     tools:context=".ui.myactivity.detail_team.DetailActivityTeam">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_detailteam"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Detail Team"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/dark_wall"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:layout_below="@id/appbar_detailteam">
 
         <ImageView
             android:id="@+id/logo_team"
@@ -48,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@color/card"
+            android:background="@color/colorPrimaryDark"
             android:orientation="horizontal">
 
             <TextView

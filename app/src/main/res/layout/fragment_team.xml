@@ -19,7 +19,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_team"

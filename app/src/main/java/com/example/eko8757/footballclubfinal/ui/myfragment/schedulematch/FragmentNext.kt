@@ -146,6 +146,7 @@ class FragmentNext : Fragment(), MatchView {
         eventList.layoutManager = LinearLayoutManager(activity)
         adapter = AdapterEventList(events) {
             activity?.startActivity<DetailActivityEvent>("idEvent" to "${it.eventId}")
+            activity?.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
         eventList.adapter = adapter
         swipeRefreshLayout.onRefresh {
