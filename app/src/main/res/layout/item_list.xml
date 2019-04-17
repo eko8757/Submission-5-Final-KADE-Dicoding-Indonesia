@@ -13,14 +13,13 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
-
-
-
     <TextView
         android:id="@+id/date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="@string/dateitem"
+        android:textSize="12sp"
+        android:fontFamily="@font/Montserrat-Regular"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:padding="8dp"/>
