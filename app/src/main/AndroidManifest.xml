@@ -29,6 +29,7 @@
             android:theme="@style/AppThemeNoActionBar"/>
         <activity
             android:name=".ui.myactivity.detail_player.DetailActivityPlayer"
+            android:theme="@style/AppThemeNoActionBar"
             android:parentActivityName=".ui.myactivity.detail_team.DetailActivityTeam">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
