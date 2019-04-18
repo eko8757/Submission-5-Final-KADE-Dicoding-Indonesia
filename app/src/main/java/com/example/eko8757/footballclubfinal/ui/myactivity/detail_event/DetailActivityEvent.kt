@@ -154,7 +154,7 @@ class DetailActivityEvent : AppCompatActivity(), DetailViewEvent {
         try {
             database.use {
                 delete(DBEvent.TABLE_EVENT,
-                        "(EVENT_ID = {eventId})","eventId" to idEvent)
+                        "(EVENT_ID = {eventId})", "eventId" to idEvent)
             }
             toast("Delete Favorite")
         } catch (e: SQLiteConstraintException) {
