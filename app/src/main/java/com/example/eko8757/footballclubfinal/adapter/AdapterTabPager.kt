@@ -1,8 +1,8 @@
 package com.example.eko8757.footballclubfinal.adapter
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentStatePagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentStatePagerAdapter
 
 
 class AdapterTabPager(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {

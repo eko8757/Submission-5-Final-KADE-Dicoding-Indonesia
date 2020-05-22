@@ -1,12 +1,12 @@
 package com.example.eko8757.footballclubfinal.ui.myfragment.team
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.view.MenuItemCompat
-import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.SearchView
+import androidx.fragment.app.Fragment
+import androidx.core.view.MenuItemCompat
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.SearchView
 import android.view.*
 import android.widget.*
 

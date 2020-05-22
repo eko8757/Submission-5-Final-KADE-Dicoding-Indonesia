@@ -1,7 +1,7 @@
 package com.example.eko8757.footballclubfinal.ui.myactivity
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.eko8757.footballclubfinal.R

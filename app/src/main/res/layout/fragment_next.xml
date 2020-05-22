@@ -13,7 +13,7 @@
        android:popupBackground="@color/colorUnchecked">
    </Spinner>
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swiperRefresh_next"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -25,11 +25,11 @@
             android:paddingEnd="16dp"
             android:paddingTop="8dp">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_next"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
             <ProgressBar
                 android:id="@+id/progress_next"
@@ -37,6 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"/>
         </RelativeLayout>
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

@@ -1,9 +1,9 @@
 package com.example.eko8757.footballclubfinal.ui.myactivity
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.eko8757.footballclubfinal.R
 import com.example.eko8757.footballclubfinal.ui.myfragment.favoritematch.FragmentFavorite
 import com.example.eko8757.footballclubfinal.ui.myfragment.schedulematch.FragmentSchedule

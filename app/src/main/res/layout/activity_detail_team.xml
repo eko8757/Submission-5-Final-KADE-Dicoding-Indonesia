@@ -7,7 +7,7 @@
     android:background="@color/colorUnchecked"
     tools:context=".ui.myactivity.detail_team.DetailActivityTeam">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar_detailteam"
         android:layout_width="match_parent"
         android:layout_height="54dp"
@@ -26,7 +26,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/white"/>
         </RelativeLayout>
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -108,11 +108,11 @@
             android:layout_marginTop="5dp"
             android:background="@color/white"
             android:orientation="vertical">
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_player"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
